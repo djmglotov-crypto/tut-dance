@@ -51,5 +51,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release view android-v0.3.0 || gh release create android-v0.3.0 --title "Tut Dance Android 0.3.0 — test builds" --notes "Two standalone React Native Android apps. Motion data and React player are bundled offline. Test builds signed with the development key. Not a Google Play release. Validate audio, camera and recording on your phone."
+          gh release view android-v0.3.0 || gh release create android-v0.3.0 --title "Tut Dance Android 0.3.0 — test builds" --notes "Two standalone React Native Android apps. Motion data and React player are bundled offline. Test builds signed with the development key. Not a Google Play release. Validate audio, camera and recording on your phone." || gh release view android-v0.3.0
+          gh release view android-v0.3.0 >/dev/null
           gh release upload android-v0.3.0 tut-dance-${{ matrix.variant }}.apk --clobber
