@@ -1,0 +1,24 @@
+{
+  "id": "./adults",
+  "name": "ТУТ — MOVE для взрослых",
+  "short_name": "ТУТ MOVE",
+  "start_url": "./dance-adults.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff9ed",
+  "theme_color": "#fff9ed",
+  "icons": [
+    {
+      "type": "image/png",
+      "src": "icon-adults-192.png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "type": "image/png",
+      "src": "icon-adults-512.png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

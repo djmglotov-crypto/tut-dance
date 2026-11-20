@@ -1,0 +1,24 @@
+{
+  "id": "./kids",
+  "name": "ТУТ — PLAY для детей",
+  "short_name": "ТУТ PLAY",
+  "start_url": "./dance-kids.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#8fd4ff",
+  "theme_color": "#8fd4ff",
+  "icons": [
+    {
+      "type": "image/png",
+      "src": "icon-kids-192.png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "type": "image/png",
+      "src": "icon-kids-512.png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
