@@ -37,6 +37,19 @@ jobs:
         env:
           APP_VARIANT: ${{ matrix.variant }}
         run: npx expo prebuild --platform android --clean --no-install
+      - name: Ensure splash background resource
+        working-directory: mobile
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          p=Path('android/app/src/main/res/values/colors.xml')
+          p.parent.mkdir(parents=True,exist_ok=True)
+          root=ET.parse(p).getroot() if p.exists() else ET.Element('resources')
+          if not any(e.attrib.get('name')=='splashscreen_background' for e in root):
+              ET.SubElement(root,'color',{'name':'splashscreen_background'}).text='#fff8e8'
+          ET.ElementTree(root).write(p,encoding='utf-8',xml_declaration=True)
+          PY
       - name: Build standalone APK
         working-directory: mobile/android
         env:
