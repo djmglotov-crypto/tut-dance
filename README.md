@@ -1,9 +1,12 @@
 # Tut Dance / MOVE + PLAY
 
-[Adult version](https://djmglotov-crypto.github.io/tut-dance/dance-adults.html?v=3) · [Kids version](https://djmglotov-crypto.github.io/tut-dance/dance-kids.html?v=3) · [Android test downloads](https://github.com/djmglotov-crypto/tut-dance/releases/tag/android-v0.3.0)
+[Adult version](https://djmglotov-crypto.github.io/tut-dance/dance-adults.html?v=5) · [Kids version](https://djmglotov-crypto.github.io/tut-dance/dance-kids.html?v=5) · [Android test downloads](https://github.com/djmglotov-crypto/tut-dance/releases/tag/android-v0.4.0)
+
+## Character concepts (0.4.0)
+GROOVE: hooded streetwear dancer, cargo-style trousers and neon shoes. SOFT: rounded lilac character with coral vest. CHROME: reflective metallic dancer. These are procedural 3D mesh interpretations of the approved concept board, not the generated images used as moving sprites. Every limb follows the existing articulated keyframes or human motion captures. Select all three in either audience mode; defaults are GROOVE for adults and SOFT for kids. Modern WebGL2 support is required for 3D; unsupported browsers retain the simplified 2D renderer. Physical-phone performance remains unverified.
 
 ## Implementation
-React web player with Canvas articulated rendering. Arms, elbows, wrists, knees, feet and torso move independently. Three authored keyframe combinations and three human motion-capture recordings (CMU Charleston 93_03, Salsa 60_01, playful dance 143_34). Source acknowledgments and usage terms: THIRD_PARTY.txt.
+React web player with Three.js volumetric character rendering composited into Canvas for video recording. Arms, elbows, wrists, knees, feet and torso move independently. Three authored keyframe combinations and three human motion-capture recordings (CMU Charleston 93_03, Salsa 60_01, playful dance 143_34). Source acknowledgments and usage terms: THIRD_PARTY.txt.
 
 Audio sources: original procedural music library (100/118/128 BPM), local audio-file decoding and beat estimation, and microphone beat estimation. Audio stays on the device. Pause stops microphone tracks. Mirror, difficulty, theme, music and speech volumes, optional spoken movement cues, local activity/streak statistics, 15-second Canvas video recording, optional camera overlay and browser sharing are implemented.
 
